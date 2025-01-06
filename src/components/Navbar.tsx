@@ -16,10 +16,10 @@ const Navbar = () => {
                 <div className='navbar-brand'>Faria Usman</div>
                 <ul className={`navbar-links  ${isMenuOpen ? 'open' : ''}`}>
                     <li><a className='navbar-link' href="#hero">Home</a></li>
-                    <li><a className='navbar-link' href="#about">About</a></li>
                     <li><a className='navbar-link' href="#project">Projects</a></li>
                     <li><a className='navbar-link' href="#skills">Skills</a></li>
                     <li><a className='navbar-link' href="#contact">Contact</a></li>
+                    <li><a className='navbar-link' href="#about">About</a></li>
                 </ul>
                 <div className='navbar-menu-icon' onClick={toggleMenu}>
                     {isMenuOpen ? <AiOutlineClose size={30} /> :

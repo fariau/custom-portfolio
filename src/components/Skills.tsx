@@ -6,7 +6,7 @@ const Skills = () => {
     <div id='skills' className='skills-container'>
       <div className='skills-grid'>
         <div className='skills-left'>
-          <h2 className='skills-heading'>Technology I work with</h2>
+          <h2 className='skills-heading' data-aos="zoom-in-up">Technology I work with</h2>
           <p className='skills-text'>I have a solid foundation in web development,
             specializing in HTML, CSS and Javascript. My experience entends to using framwork like
             React and Next.js to create daynamic and user-friendly application. I also proficient in

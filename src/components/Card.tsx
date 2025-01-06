@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import "../app/styles/card.css";
 
 interface propsType {
@@ -10,13 +9,14 @@ interface propsType {
 }
 
 const Card: React.FC<propsType> = ({ title, desc, img, tags }) => {
+  const isClint = typeof window !== "undefined"
   return (
-    <div className={`card ${window.innerWidth >= 640 ? "card-sm": ''}`} data-aos="zoom-in-up">
+    <div className={`card ${isClint && window.innerWidth >= 640 ? "card-sm": ''}`} data-aos="zoom-in-up">
       <div>
-        <Image className= {`card ${window.innerWidth >= 640 ? "card-image-sm": ''}`}
+        <img className= {`card ${isClint && window.innerWidth >= 640 ? "card-image-sm": ''}`}
           src={img}
-          width={350}
-          height={350}
+          width={300}
+          height={300}
           alt={title}
         />
       </div>
